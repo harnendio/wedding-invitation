@@ -1,0 +1,14 @@
+.menu {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.undangan {
+  height: 100vh;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

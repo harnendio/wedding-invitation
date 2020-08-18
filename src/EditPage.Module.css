@@ -1,0 +1,13 @@
+.container {
+  padding: 16px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 14px;
+}
+
+.row > .fieldLabel {
+  width: 200px;
+}
