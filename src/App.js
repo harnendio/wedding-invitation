@@ -1,18 +1,15 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-scripts";
-import "./HomePage";
-import "./EditPage";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import HomePage from "./HomePage";
+import EditPage from "./EditPage";
 
 class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path="./edit">
-            <HomePage path="/">
-              <EditPage></EditPage>
-            </HomePage>
-          </Route>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/edit" component={EditPage} />
         </Switch>
       </BrowserRouter>
     );
